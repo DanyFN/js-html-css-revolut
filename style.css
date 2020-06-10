@@ -12,7 +12,6 @@
 }
 .nav-left, .nav-right{
   height: 200px;
-  line-height: 200px;
   /* border: 1px solid red; */
   width: 50%;
   font-size: 20px;
@@ -29,6 +28,7 @@
   list-style: none;
   padding: 0px 5px;
   position: relative;
+  line-height: 80px;
 }
 button{
   background-color: rgb(208, 49, 130);
@@ -43,8 +43,20 @@ a{
   color: grey;
   text-decoration: none;
 }
-/* HAMBUGER MENU DROPDWON */
-.dropdown{
+/* MENU DROPDWON */
+.nav-right .dropdown {
+  display: none;
+  flex-direction: column;
   position: absolute;
+  justify-content: space-between;
   background-color: red;
+  right: -64px;
+}
+.nav-right .dropdown li {
+  line-height: 40px;
+  width: 200px;
+}
+/* CLASSI D'APPOGGIO */
+.dropdown.active{
+  display: flex;
 }
