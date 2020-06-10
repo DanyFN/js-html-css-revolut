@@ -11,7 +11,6 @@
   height: 100vh;
 }
 .nav-left, .nav-right{
-  height: 200px;
   /* border: 1px solid red; */
   width: 50%;
   font-size: 20px;
@@ -29,6 +28,12 @@
   padding: 0px 5px;
   position: relative;
   line-height: 80px;
+
+}
+
+img{
+  width: 100px;
+
 }
 button{
   background-color: rgb(208, 49, 130);
@@ -49,12 +54,19 @@ a{
   flex-direction: column;
   position: absolute;
   justify-content: space-between;
-  background-color: red;
+  border: 1px solid lightgrey;
   right: -64px;
 }
+
 .nav-right .dropdown li {
   line-height: 40px;
   width: 200px;
+  color: lightgrey;
+}
+
+.nav-right .dropdown li:hover {
+  box-shadow:3px 3px 5px 6px #ccc;
+  color: black;
 }
 /* CLASSI D'APPOGGIO */
 .dropdown.active{
