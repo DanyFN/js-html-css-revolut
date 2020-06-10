@@ -1,0 +1,50 @@
+/* REGOLE GENERALI */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper{
+  width: 80%;
+  margin: auto;
+  /* border: 1px solid black; */
+  height: 100vh;
+}
+.nav-left, .nav-right{
+  height: 200px;
+  line-height: 200px;
+  /* border: 1px solid red; */
+  width: 50%;
+  font-size: 20px;
+  text-align: center;
+}
+.nav-left{
+  float: left;
+}
+.nav-right{
+  float: right;
+}
+.nav-left ul li, .nav-right ul li{
+  display: inline-block;
+  list-style: none;
+  padding: 0px 5px;
+  position: relative;
+}
+button{
+  background-color: rgb(208, 49, 130);
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+}
+strong{
+  color: black;
+}
+a{
+  color: grey;
+  text-decoration: none;
+}
+/* HAMBUGER MENU DROPDWON */
+.dropdown{
+  position: absolute;
+  background-color: red;
+}
