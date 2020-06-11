@@ -1,4 +1,5 @@
 /* REGOLE GENERALI */
+
 *{
   margin: 0;
   padding: 0;
@@ -7,7 +8,7 @@
 .wrapper{
   width: 80%;
   margin: auto;
-  /* border: 1px solid black; */
+  border: 1px solid rgb(208, 49, 130);
   height: 100vh;
 }
 .nav-left, .nav-right{
@@ -31,9 +32,14 @@
   font-weight: bold;
 
 }
-img{
+.nav-left .logo{
   width: 100px;
-
+}
+img{
+  width: 100%;
+  vertical-align: middle;
+  position: relative;
+  top: -4px;
 }
 button{
   background-color: rgb(208, 49, 130);
@@ -53,8 +59,12 @@ strong{
   color: black;
 }
 a{
-  color: grey;
+  color: lightgrey;
   text-decoration: none;
+
+}
+a:hover{
+  color: black;
 }
 /* MENU DROPDWON */
 .nav-right .dropdown {
@@ -70,14 +80,15 @@ a{
   width: 200px;
   color: lightgrey;
 }
-.nav-right .dropdown li:hover {
-  color: black;
-}
 .nav-right .dropdown:hover {
   box-shadow:2px 2px 2px 2px #ccc;
   color: black;
 }
-/* CLASSI D'APPOGGIO */
+
 .dropdown.active{
   display: flex;
+}
+
+.fa-chevron-down, .fa-chevron-up{
+  font-size: 12px;
 }

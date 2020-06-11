@@ -12,31 +12,57 @@
       <header>
         <nav class="nav-left">
           <ul>
-            <li><a href="#"> <img src="img\logo.png" alt=""></a></li>
-            <li><a href="#"><strong>Personale</strong> </a></li>
-            <li><a href="#">Businnes</a></li>
+            <li class="logo">
+              <a href="#">
+                <img src="img\logo.png" alt="">
+              </a>
+            </li>
+            <li><a href="#"><strong>PERSONALE</strong> </a></li>
+            <li><a href="#">BUSINNES</a></li>
           </ul>
 
         </nav>
         <nav class="nav-right">
           <ul>
             <li><a href="#">Tariffazione</a></li>
-            <li><a href="#">Conti</a></li>
-            <li><a href="#">Prodotti</a></li>
-            <li class="menu-dropdown"><a href="#">Azienda</a>
+            <li class ="menu-dropdown">
+              <a href="#">Conti</a>
+              <ul class="dropdown">
+                <li><a href="#">Chi Siamo</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Lavora Con Noi</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <li><a href="#">Contatti</a></li>
+              </ul>
+
+            </li>
+            <li class="menu-dropdown">
+              <a href="#">Azienda</a>
               <!-- INIZIO DROPDOWN -->
               <ul class="dropdown">
-                <li>Chi Siamo</li>
-                <li>Blog</li>
-                <li>Lavora con noi</li>
-                <li>Affiliates</li>
-                <li>Contatti</li>
+                <li> <a href="#">Chi Siamo</a></li>
+                <li> <a href="#">Blog</a></li>
+                <li> <a href="#">Lavora Con Noi</a></li>
+                <li> <a href="#">Affiliates</a></li>
+                <li> <a href="#">Contatti</a></li>
               </ul>
               <!-- FINE DROPDOWN -->
             </li>
-            <li><a href="#">Aiuti</a></li>
-            <li><a href="#">IT</i></a></li>
-            <li><a href="#"><button type="button" name="button">Scarica L'App</button></a></li>
+            <li>
+              <a href="#">Aiuti</a>
+            </li>
+            <li>
+              <a id="arrowDown" href="#">
+                IT
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-chevron-up"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <button type="button" name="button">Scarica L'App</button>
+              </a>
+            </li>
           </ul>
         </nav>
       </header>
