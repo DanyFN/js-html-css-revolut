@@ -13,5 +13,22 @@ $(document).ready(
         $(this).children(".dropdown").toggleClass("active");
       }
     )
+
+    $(".menu-dropdown").mouseleave(
+      function() {
+        // $(".menu-dropdown.dropdown").removeClass('active');
+        $(this).children(".dropdown").removeClass("active");
+
+      }
+    )
+
+
+
+
+
+
+
+
+
   }
 )
